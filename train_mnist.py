@@ -16,6 +16,7 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
+
 # Training model with 5 epochs
 model.fit(x_train, y_train, epochs=5)
 
