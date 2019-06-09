@@ -9,15 +9,20 @@ ___
 
 ## Setting up environment
 Install pipenv:
-  pip install pipenv
+
+    pip install pipenv
 
 Inside project directory:
-  pipenv install .
+
+    pipenv install .
   
 Activate environment:
-  pipenv shell
-  
+
+    pipenv shell
+___
+
 ## Training MNIST model
-  python train_mnist.py
+
+    python train_mnist.py
   
 Trained model will be saved in models directory
