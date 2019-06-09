@@ -20,6 +20,7 @@ model.compile(optimizer='adam',
 # Training model with 5 epochs
 model.fit(x_train, y_train, epochs=5)
 
+
 # Performing evaluation using test split
 model.evaluate(x_test, y_test)
 
