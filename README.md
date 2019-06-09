@@ -1,4 +1,4 @@
-# NetApp Snaphot for Model and Data versioning
+# NetApp Snaphot for Model versioning
 HAVE TO ADD DESCRIPTION
 
 ___
