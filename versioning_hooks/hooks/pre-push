@@ -26,11 +26,11 @@ echo "snapshot with id $snapshotid is created"
 # Link the created snapshot as the model version at this point of time
 
 # If there is already an old versioned model directory, remove it 
-if [ -d "./data.version" ] 
+if [ -d "./model.version" ] 
 then
-    rm -rf ./data.version 
+    rm -rf ./model.version 
 fi
 
 echo "Linking latest model version"
 # Link the latest versioned model snapshot to the project directory. In our case, data.version includes latest snapshot
-ln -s /mnt/.snapshot/"$snapshotid" ./data.version
+ln -s /mnt/.snapshot/"$snapshotid" ./model.version
