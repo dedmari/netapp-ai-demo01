@@ -12,7 +12,7 @@ model = tf.keras.models.Sequential([
   tf.keras.layers.Dropout(0.2),
   tf.keras.layers.Dense(10, activation=tf.nn.softmax)
 ])
-model.compile(optimizer='rmsprop',
+model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
@@ -25,4 +25,4 @@ model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test, y_test)
 
 # Save entire model to HDF5 file
-model.save('./models/trained_model.h5')
+model.save('./models/trained_model_ds_2.h5')
