@@ -5,14 +5,14 @@ snapshotid=$(git log --format="%H" -n 1)
 
 # Link the created snapshot as the model version at this point of time
 # If there is already an old versioned model directory, remove it
-if [ -d "./model.version" ]
+if [ -d "./models.version" ]
 then
-    rm -rf ./model.version
+    rm -rf ./models.version
 fi
 
 echo "Linking latest model version"
 # Link the latest versioned model snapshot to the project directory. In our case, data.version includes latest snapshot
-ln -s /mnt/.snapshot/"$snapshotid" ./model.version
+ln -s /mnt/.snapshot/"$snapshotid" ./models.version
 
 echo "model version with commit id $snapshotid is restored"
 
