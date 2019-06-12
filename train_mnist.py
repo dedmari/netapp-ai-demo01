@@ -2,7 +2,7 @@ import tensorflow as tf
 mnist = tf.keras.datasets.mnist
 
 # Configuration
-optimizer = 'adam'
+optimizer = 'rmsprop'
 epochs = 1
 model_path = './models/trained_model_ds_2.h5'
 
