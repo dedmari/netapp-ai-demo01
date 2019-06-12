@@ -4,6 +4,7 @@ mnist = tf.keras.datasets.mnist
 # Configuration
 optimizer = 'adam'
 epochs = 1
+model_path = './models/trained_model_ds_2.h5'
 
 # Loading MNIST dataset
 (x_train, y_train),(x_test, y_test) = mnist.load_data()
@@ -20,7 +21,6 @@ model.compile(optimizer=optimizer,
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-
 # Training model with 5 epochs
 model.fit(x_train, y_train, epochs=epochs)
 
@@ -29,4 +29,4 @@ model.fit(x_train, y_train, epochs=epochs)
 model.evaluate(x_test, y_test)
 
 # Save entire model to HDF5 file
-model.save('./models/trained_model_ds_2.h5')
+model.save(model_path)
