@@ -1,4 +1,4 @@
-# NetApp Snaphot for Model versioning
+# NetApp Snaphot for ML Version Control
 
 
 ___
