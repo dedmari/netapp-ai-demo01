@@ -1,6 +1,10 @@
 import tensorflow as tf
 mnist = tf.keras.datasets.mnist
 
+# Configuration
+optimizer = 'adam'
+epochs = 1
+
 # Loading MNIST dataset
 (x_train, y_train),(x_test, y_test) = mnist.load_data()
 x_train, x_test = x_train / 255.0, x_test / 255.0
@@ -12,13 +16,13 @@ model = tf.keras.models.Sequential([
   tf.keras.layers.Dropout(0.2),
   tf.keras.layers.Dense(10, activation=tf.nn.softmax)
 ])
-model.compile(optimizer='adam',
+model.compile(optimizer=optimizer,
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
 
 # Training model with 5 epochs
-model.fit(x_train, y_train, epochs=1)
+model.fit(x_train, y_train, epochs=epochs)
 
 
 # Performing evaluation using test split
