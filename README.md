@@ -4,7 +4,7 @@
 ___
 
 ## Using hooks for versioning
-Replace .git/hooks with versioning_hooks/hooks in the local repository
+Replace .git/hooks folder with versioning_hooks/hooks in the local repository
 ___
 
 ## Setting up environment
@@ -12,7 +12,7 @@ Install pipenv:
 
     pip install pipenv
 
-Inside project directory:
+Inside project directory, install project dependencies:
 
     pipenv install .
   
