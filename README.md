@@ -47,4 +47,11 @@ Trained model will be saved in models directory and upon git push, model version
 For demo video and blog please visit [link](https://www.linkedin.com/pulse/simplify-machine-learning-version-control-muneer-ahmad-dedmari/)
 
 
+
+
+
+
+
+
+
 *Repository maintained by Muneer Ahmad Dedmari*
