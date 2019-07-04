@@ -48,4 +48,4 @@ For demo video and blog please visit [link](https://www.linkedin.com/pulse/simpl
 
 ___
 
-*Repository maintained by Muneer Ahmad Dedmari*
+*Repository maintained by [Muneer Ahmad Dedmari](https://www.linkedin.com/in/muneer-ahmad-dedmari/) and [Steve Guhr](https://www.linkedin.com/in/steve-guhr-154105149/)*
