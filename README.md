@@ -41,3 +41,5 @@ ___
     python train_mnist.py
   
 Trained model will be saved in models directory and upon git push, model version associated with commit ID is stored in models.version directory.
+
+For demo video and blog please visit [link](https://www.linkedin.com/pulse/simplify-machine-learning-version-control-muneer-ahmad-dedmari/)
