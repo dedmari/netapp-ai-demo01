@@ -20,6 +20,7 @@ ___
 ## Using hooks for versioning
 
 Replace .git/hooks folder with versioning_hooks/hooks in the local repository.
+
 In pre-push hook, you can change configuration settings as per your requirement (e.g. vserver, username etc.) needed for snapshot.
 ___
 
